@@ -92,5 +92,10 @@ void findBoom(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col) {
 		} else {
 			printf("Pos out of the board range,Enter again!\n");
 		}
+		
+		if(total_blank == 0) {
+			printf("Congratulations You Win!\n");
+			displayBoard(mine,ROW,COL);
+		}
 	}
 }
